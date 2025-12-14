@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Edit3, X, Save } from 'lucide-react';
+import { X, Save } from 'lucide-react';
 import { type LetterContent, DEFAULT_LETTER } from '../types.ts';
 
 const Letter: React.FC = () => {
@@ -23,12 +23,12 @@ const Letter: React.FC = () => {
     }
   }, [typingIndex, content.body]);
 
-  const openEditor = () => {
-    setEditTitle(content.title);
-    setEditBody(content.body);
-    setEditSignature(content.signature);
-    setIsEditing(true);
-  };
+  //const openEditor = () => {
+  //  setEditTitle(content.title);
+  //  setEditBody(content.body);
+  //  setEditSignature(content.signature);
+  //  setIsEditing(true);
+  //};
 
   const handleSave = () => {
     setContent({
